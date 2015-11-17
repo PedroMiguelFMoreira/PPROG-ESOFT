@@ -1,0 +1,1 @@
+UI implementada à pancada, não me apeteceu implementar a mecanica dos números, apenas implementei  o design.

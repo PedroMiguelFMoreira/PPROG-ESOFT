@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html class="yui3-js-enabled" dir="ltr" xml:lang="pt" lang="pt"><div class="" id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important"></div><head>
+    <title>PPROG(16459): Exercício Contadores Domésticos </title>
+    <link rel="shortcut icon" href="https://moodle.isep.ipp.pt/theme/image.php/isep/theme/1424258107/favicon">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="keywords" content="moodle, PPROG(16459): Exercício Contadores Domésticos ">
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/moodle.isep.ipp.pt","sesskey":"SBbauzSuS1","loadingicon":"https:\/\/moodle.isep.ipp.pt\/theme\/image.php\/isep\/core\/1424258107\/i\/loading_small","themerev":"1424258107","slasharguments":1,"theme":"isep","jsrev":"1424258107","svgicons":true};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''};if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else me.path=component+'/'+component+'.'+me.type};
+YUI_config = {"debug":false,"base":"https:\/\/moodle.isep.ipp.pt\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/moodle.isep.ipp.pt\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/moodle.isep.ipp.pt\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/moodle.isep.ipp.pt\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/moodle.isep.ipp.pt\/theme\/yui_combo.php?m\/1424258107\/","combine":true,"comboBase":"https:\/\/moodle.isep.ipp.pt\/theme\/yui_combo.php?","ext":false,"root":"m\/1424258107\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-formautosubmit":{"requires":["base","event-key"]},"moodle-core-checknet":{"requires":["base-base","moodle-core-notification-alert","io-base"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dock":{"requires":["base","node","event-custom","event-mouseenter","event-resize","escape","moodle-core-dock-loader"]},"moodle-core-dock-loader":{"requires":["escape"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-formchangechecker":{"requires":["base","event-focus"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core_availability-form":{"requires":["base","node","event","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-calendar-eventmanager":{"requires":["base","node","event-mouseenter","overlay","moodle-calendar-eventmanager-skin"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-toolboxes":{"requires":["node","base","event-key","node","io","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-form-showadvanced":{"requires":["node","base","selector-css3"]},"moodle-form-passwordunmask":{"requires":["node","base"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-qbankmanager":{"requires":["node","selector-css3"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_forum-subscriptiontoggle":{"requires":["base-base","io-base"]},"moodle-mod_quiz-util":{"requires":["node"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-randomquestion":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-repaginate":{"requires":["base","event","node","io","moodle-core-notification-dialogue"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-quizquestionbank":{"requires":["base","event","node","io","io-form","yui-later","moodle-question-qbankmanager","moodle-core-notification-dialogue"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_navigation-navigation":{"requires":["base","io-base","node","event-synthetic","event-delegate","json-parse"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_grader-scrollview":{"requires":["base","node"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-theme_bootstrapbase-bootstrap":{"requires":["node","selector-css3"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_html-button":{"requires":["moodle-editor_atto-plugin","event-valuechange"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-local_bulkmeta-selector":{"requires":["base","node","json-parse","autocomplete","autocomplete-filters","autocomplete-highlighters","event","event-key"]}}},"gallery":{"name":"gallery","base":"https:\/\/moodle.isep.ipp.pt\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/moodle.isep.ipp.pt\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1424258107\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/moodle.isep.ipp.pt\/lib\/javascript.php\/1424258107\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.mathjax.org\/mathjax\/2.3-latest\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/yui_combo.css"><link rel="stylesheet" type="text/css" href="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/yui_combo_003.css"><script type="text/javascript" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/yui_combo.php"></script><script async="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/yui_combo_004.php" id="yui_3_17_2_2_1425917980611_4" charset="utf-8"></script><script async="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/yui_combo_002.php" id="yui_3_17_2_2_1425917980611_14" charset="utf-8"></script><link href="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/yui_combo_002.css" id="yui_3_17_2_2_1425917980611_99" rel="stylesheet" charset="utf-8"><script async="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/yui_combo_003.php" id="yui_3_17_2_2_1425917980611_100" charset="utf-8"></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/all.css">
+<script type="text/javascript" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/javascript-static.js"></script>
+<script type="text/x-mathjax-config">MathJax.Hub.Config({
+    config: ["MMLorHTML.js", "Safe.js"],
+    jax: ["input/TeX","input/MathML","output/HTML-CSS","output/NativeMML"],
+    extensions: ["tex2jax.js","mml2jax.js","MathMenu.js","MathZoom.js"],
+    TeX: {
+        extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"]
+    },
+    menuSettings: {
+        zoom: "Double-Click",
+        mpContext: true,
+        mpMouse: true
+    },
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script></head>
+
+<body id="page-mod-page-view" class="format-weeks  path-mod path-mod-page gecko dir-ltr lang-pt yui-skin-sam yui3-skin-sam moodle-isep-ipp-pt pagelayout-incourse course-992 context-44481 cmid-18483 category-416 side-pre-only jsenabled">
+<div class="skiplinks"><a class="skip" href="#maincontent">Ir para o conteúdo principal</a></div>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+<div id="page-wrapper">
+  <div id="page">
+            <div id="page-header">
+         <a class="logo" href="https://moodle.isep.ipp.pt/" title="Página principal"></a>
+         <div class="headermenu"><div class="logininfo">Utilizador: <a href="https://moodle.isep.ipp.pt/user/profile.php?id=6166" title="Ver perfil">Pedro Moreira 1140781</a> (<a href="https://moodle.isep.ipp.pt/login/logout.php?sesskey=SBbauzSuS1">Sair</a>)</div></div>
+        </div>
+    <!-- END OF HEADER -->
+<!-- START CUSTOMMENU AND NAVBAR -->
+    <div id="navcontainer">
+        
+    </div>
+
+        
+                    <div class="navbar clearfix">
+                <div class="breadcrumb"><span class="accesshide">Caminho da página</span><nav><ul><li><a href="https://moodle.isep.ipp.pt/">Página principal</a></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <a href="https://moodle.isep.ipp.pt/my/">As minhas disciplinas</a></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <a href="https://moodle.isep.ipp.pt/course/index.php?categoryid=30">2014 / 2015</a></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <a href="https://moodle.isep.ipp.pt/course/index.php?categoryid=56">Engenharia Informática</a></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <a href="https://moodle.isep.ipp.pt/course/index.php?categoryid=162">1 Ano - Licenciatura</a></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <a href="https://moodle.isep.ipp.pt/course/index.php?categoryid=416">2º Semestre</a></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <a title="DEI - Paradigmas da Programação - 2º Semestre 2014/2015" href="https://moodle.isep.ipp.pt/course/view.php?id=992">PPROG(16459)</a></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <span>9 Março - 15 Março</span></li><li> <span class="accesshide "><span class="arrow_text">/</span>&nbsp;</span><span class="arrow sep">►</span> <a title="Página" href="https://moodle.isep.ipp.pt/mod/page/view.php?id=18483">Exercício Contadores Domésticos </a></li></ul></nav></div>
+                <div class="navbutton"> </div>
+            </div>
+        
+<!-- END OF CUSTOMMENU AND NAVBAR -->
+    <div id="page-content">
+       <div id="region-main-box">
+           <div id="region-pre-box">
+               <div id="region-main">
+                   <div class="region-content">
+                                              <div role="main"><span id="maincontent"></span><h2>Exercício Contadores Domésticos </h2><div class="box generalbox center clearfix"><div class="no-overflow"><p>Uma
+ empresa de distribuição de gás e eletricidade pretende uma aplicação 
+para fazer a gestão de contadores domésticos. Os contadores existentes 
+são de três tipos: gás, eletricidade com tarifário simples e 
+eletricidade com tarifário bi-horário. Os contadores registam apenas o 
+consumo do mês atual (número inteiro), sendo o gás medido em m<sup>3</sup>
+ e a eletricidade em kWh. Os contadores bi-horários registam dois 
+consumos do mês atual: nas horas de vazio e fora das horas de vazio. 
+Cada contador tem uma identificação que distingue os contadores de gás 
+dos de eletricidade, com o seguinte formato: GAZ-X e ELECT-Y, sendo X e Y
+ números inteiros desde 1. Por exemplo, GAZ-1, GAZ-2, ELECT-1, ELECT-2, 
+etc.</p>
+<p>Elabore as classes representativas dos contadores, usando o seguinte procedimento:</p>
+<ol>
+<li>Esboce um diagrama de classes, em notação UML, considerando que as 
+classes dos contadores devem permitir calcular o custo do consumo 
+registado. O custo do consumo de gás é dado pela seguinte fórmula: custo
+ unitário x consumo, sendo o custo unitário igual a 0.8 €/m<sup>3</sup>.
+ O custo do consumo de eletricidade é baseado na tabela abaixo. Assumir 
+que os custos unitários poderão ser atualizados no futuro, que pode ser 
+preciso listar os nomes dos clientes que possuem contadores e que os 
+identificadores dos contadores são criados automaticamente.<br><ol>
+<li style="list-style-type: none;">
+<ul>
+<ul><!--<li>--></ul>
+</ul>
+<div align="center">
+<table style="border-color: #000000; border-width: 1px; border-style: solid;" border="1" cellpadding="0" cellspacing="0">
+<tbody>
+<tr>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;" rowspan="2">
+<p align="center">Potência Contratada</p>
+</td>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;" rowspan="2">
+<p align="center">Tarifário Simples</p>
+</td>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;" colspan="2">
+<p align="center">Tarifário Bi-Horário</p>
+</td>
+</tr>
+<tr>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;">
+<p align="center">Horas de Vazio</p>
+</td>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;">
+<p align="center">Horas Fora de Vazio</p>
+</td>
+</tr>
+<tr>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;">
+<p align="center">&lt; 6.9 KVA</p>
+</td>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;">
+<p align="center">0.13 €/KWH</p>
+</td>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;" rowspan="2">
+<p align="center">0.066 €/KWH</p>
+</td>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;" rowspan="2">
+<p align="center">0.14 €/KWH</p>
+</td>
+</tr>
+<tr>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;">
+<p align="center">≥ 6.9 KVA</p>
+</td>
+<td style="border-color: #000000; border-style: solid; border-width: 1px;">
+<p align="center">0.16 €/KWH</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul><!--</li>--></ul>
+</li>
+</ol></li>
+<li>Implemente as classes do diagrama. <!--<ul>
+<li></li>
+</ul>-->
+<ul><!--<li></li>--></ul>
+<p></p>
+</li>
+<li>Crie uma nova classe para testar as classes implementadas, satisfazendo os seguintes requisitos:</li>
+</ol>
+<p style="margin-left: 60px;">a) Construa objetos de cada uma das classes instanciáveis e guarde-os num contentor de objetos do tipo <i>Array</i>.</p>
+<p style="margin-left: 60px;">b) Mostre todos os contadores armazenados no contentor, acompanhados dos nomes dos respetivos clientes.</p>
+<p style="margin-left: 60px;">c) Mostre a quantidade de contadores de eletricidade criados.</p>
+<p style="margin-left: 60px;">d) Mostre os identificadores dos contadores de eletricidade com tarifário bi-horário armazenados no contentor.</p>
+<p style="margin-left: 60px;">e)&nbsp;Liste os identificadores dos 
+contadores guardados no contentor, juntamente com o respetivo custo do 
+consumo registado. Para o efeito deve usar o mecanismo do polimorfismo e
+ sem recorrer ao método <i>toString</i>.</p>
+<p style="margin-left: 60px;">f) Mostre o maior consumo de gás registado.</p>
+<p style="margin-left: 60px;">g) Liste os nomes dos clientes que possuem contadores armazenados no contentor. A listagem não deve apresentar nomes repetidos.</p>
+<p style="margin-left: 60px;"></p>
+<p style="margin-left: 60px;"></p>
+<p style="margin-left: 60px;"></p>
+<p style="margin-left: 60px;">&nbsp;</p>
+<p style="margin-left: 60px;"></p>
+<p style="margin-left: 60px;"></p>
+<p style="margin-left: 60px;"></p>
+<p style="margin-left: 60px;"></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p>
+<p></p></div></div><div class="modified">Última alteração: Domingo, 8 Março 2015, 22:35</div></div>                                          </div>
+               </div>
+
+                              <div id="region-pre" class="block-region">
+                   <div class="region-content">
+                           <a href="#sb-1" class="skip-block">Ignorar Impressão de Documentos</a><div id="inst158" class="block_reprografia  block" role="complementary" data-block="reprografia" data-instanceid="158" aria-labelledby="instance-158-header"><div class="header"><div id="yui_3_17_2_2_1425917980611_113" class="title"><div class="block_action"><img src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/switch_minus.svg" class="block-hider-hide" tabindex="0" alt="Ocultar bloco Impressão de Documentos" title="Ocultar bloco Impressão de Documentos"><img src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/switch_plus.svg" class="block-hider-show" tabindex="0" alt="Mostrar bloco Impressão de Documentos" title="Mostrar bloco Impressão de Documentos"></div><h2 id="instance-158-header">Impressão de Documentos</h2></div></div><div class="content">Envio de ficheiro para reprografia
+                <script type="text/javascript" language="javascript">
+                    function trocaform(num)
+                    {
+                        if(num==1)
+                        {
+                            document.getElementById('Printwebprint').style.display = 'block';
+                            document.getElementById('Printreprografia').style.display = 'none';
+                        }
+                        else
+                        {
+                            document.getElementById('Printwebprint').style.display = 'none';
+                            document.getElementById('Printreprografia').style.display = 'block';
+                        }
+                    } 
+                </script>    			
+            <br>
+                <input name="repo" checked="checked" onclick="trocaform(0)" type="radio">Reprografia 
+                <!--<input type=radio name=repo onclick=trocaform(1)>WebPrint<a href=https://www.isep.ipp.pt/wiki/servicoimpressaocopia.ashx target=_blank title="Ajuda com a activa&ccedil;&atilde;o do servi&ccedil;o no Portal"><img src="https://moodle.isep.ipp.pt/theme/isep/pix/help.gif" border=0 alt="Ajuda com a activa&ccedil;&atilde;o do servi&ccedil;o no Portal"></a>--><br><div id="Printwebprint" style="display:none">
+                 Para poder usar o serviço WebPrint primeiro terá de o activar no Portal.<br><a href="https://www.isep.ipp.pt/wiki/servicoimpressaocopia.ashx" target="_blank">Instruções de activação</a>
+                 </div><div id="Printreprografia" style="display:block"><form enctype="multipart/form-data" action="https://moodle.isep.ipp.pt/blocks/reprografia/upload.php" method="POST"><input name="sesskey" value="SBbauzSuS1" type="hidden">
+			<input name="id" value="992" type="hidden">
+			<input name="instanceid" value="" type="hidden"><input name="MAX_FILE_SIZE" value="100000000" type="hidden"><input size="17" name="uploadreprografia" type="file"><br>
+<input value="Enviar Ficheiro" type="submit"></form></div></div></div><span id="sb-1" class="skip-block-to"></span><a href="#sb-2" class="skip-block">Ignorar Navegação</a><div id="inst4" class="block_navigation  block" role="navigation" data-block="navigation" data-instanceid="4" aria-labelledby="instance-4-header"><div class="header"><div id="yui_3_17_2_2_1425917980611_130" class="title"><div class="block_action"><img src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/switch_minus.svg" class="block-hider-hide" tabindex="0" alt="Ocultar bloco Navegação" title="Ocultar bloco Navegação"><img src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/switch_plus.svg" class="block-hider-show" tabindex="0" alt="Mostrar bloco Navegação" title="Mostrar bloco Navegação"></div><h2 id="instance-4-header">Navegação</h2></div></div><div class="content"><ul class="block_tree list"><li class="type_unknown depth_1 contains_branch" aria-expanded="true"><p class="tree_item branch canexpand navigation_node"><a href="https://moodle.isep.ipp.pt/">Página principal</a></p><ul><li class="type_setting depth_2 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/my/"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Minha página principal</a></p></li>
+<li class="type_course depth_2 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span title="Moodle - Instituto Superior de Engenharia do Porto" tabindex="0">Páginas do site</span></p><ul><li class="type_custom depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/blog/index.php?courseid=0"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Blogues do site</a></p></li>
+<li class="type_custom depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/tag/search.php"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Palavras-chave</a></p></li>
+<li class="type_custom depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/calendar/view.php?view=month"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Calendário</a></p></li>
+<li class="type_activity depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a title="Fórum" href="https://moodle.isep.ipp.pt/mod/forum/view.php?id=1"><img alt="Fórum" class="smallicon navicon" title="Fórum" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/icon_002.png">Notícias</a></p></li>
+<li class="type_activity depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a title="URL" href="https://moodle.isep.ipp.pt/mod/url/view.php?id=822"><img alt="URL" class="smallicon navicon" title="URL" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/icon_003.png">Moodle até 2013/2014</a></p></li>
+<li class="type_activity depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a title="URL" href="https://moodle.isep.ipp.pt/mod/url/view.php?id=823"><img alt="URL" class="smallicon navicon" title="URL" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/icon_003.png">MSDN academic alliance</a></p></li>
+<li class="type_activity depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a title="URL" href="https://moodle.isep.ipp.pt/mod/url/view.php?id=824"><img alt="URL" class="smallicon navicon" title="URL" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/icon_003.png">Run CMS IntelliCAD</a></p></li>
+<li class="type_activity depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a title="URL" href="https://moodle.isep.ipp.pt/mod/url/view.php?id=827" id="action_link54fdc81aa8e5d3"><img alt="URL" class="smallicon navicon" title="URL" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/sourcecode-24.png">Helpdesk</a></p></li></ul></li>
+<li class="type_user depth_2 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span tabindex="0">Meu perfil</span></p><ul><li class="type_custom depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/user/profile.php?id=6166"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Ver perfil</a></p></li>
+<li class="type_custom depth_3 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span tabindex="0">Mensagens no fórum</span></p><ul><li class="type_custom depth_4 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/mod/forum/user.php?id=6166"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Mensagens</a></p></li>
+<li class="type_custom depth_4 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/mod/forum/user.php?id=6166&amp;mode=discussions"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Tópicos</a></p></li></ul></li>
+<li class="type_unknown depth_3 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span tabindex="0">Blogues</span></p><ul><li class="type_custom depth_4 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/blog/index.php?userid=6166"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Ver as minhas mensagens</a></p></li>
+<li class="type_custom depth_4 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/blog/edit.php?action=add"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Adicionar nova mensagem</a></p></li></ul></li>
+<li class="type_setting depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/message/index.php?user1=6166"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Mensagens</a></p></li>
+<li class="type_setting depth_3 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/user/files.php"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Meus ficheiros privados</a></p></li></ul></li>
+<li class="type_system depth_2 contains_branch" aria-expanded="true"><p class="tree_item branch"><span tabindex="0">Disciplina atual</span></p><ul><li class="type_course depth_3 contains_branch" aria-expanded="true"><p class="tree_item branch canexpand"><a title="DEI - Paradigmas da Programação - 2º Semestre 2014/2015" href="https://moodle.isep.ipp.pt/course/view.php?id=992">PPROG(16459)</a></p><ul><li class="type_unknown depth_4 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><a href="https://moodle.isep.ipp.pt/user/index.php?id=992">Participantes</a></p><ul><li class="type_custom depth_5 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/blog/index.php?courseid=992"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Blogues da disciplina</a></p></li>
+<li class="type_user depth_5 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><a href="https://moodle.isep.ipp.pt/user/view.php?id=6166&amp;course=992">Pedro Moreira 1140781</a></p><ul><li class="type_custom depth_6 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/user/view.php?id=6166&amp;course=992"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Ver perfil</a></p></li>
+<li class="type_custom depth_6 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span tabindex="0">Mensagens no fórum</span></p><ul><li class="type_custom depth_7 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/mod/forum/user.php?id=6166&amp;course=992"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Mensagens</a></p></li>
+<li class="type_custom depth_7 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/mod/forum/user.php?id=6166&amp;course=992&amp;mode=discussions"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Tópicos</a></p></li></ul></li>
+<li class="type_unknown depth_6 collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span tabindex="0">Blogues</span></p><ul><li class="type_custom depth_7 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/blog/index.php?userid=6166"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Ver as minhas mensagens</a></p></li>
+<li class="type_custom depth_7 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/blog/edit.php?action=add"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Adicionar nova mensagem</a></p></li></ul></li>
+<li class="type_setting depth_6 item_with_icon"><p class="tree_item leaf hasicon"><a href="https://moodle.isep.ipp.pt/message/index.php?user1=6166&amp;viewing=course_992"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Mensagens</a></p></li></ul></li></ul></li>
+<li class="type_structure depth_4 collapsed contains_branch" aria-expanded="false"><p data-loaded="0" data-expandable="1" class="tree_item branch" id="expandable_branch_30_15980"><span tabindex="0">Geral</span></p></li>
+<li class="type_structure depth_4 collapsed contains_branch" aria-expanded="false"><p data-loaded="0" data-expandable="1" class="tree_item branch" id="expandable_branch_30_15981"><span tabindex="0">23 Fevereiro - 1 Março</span></p></li>
+<li class="type_structure depth_4 collapsed contains_branch" aria-expanded="false"><p data-loaded="0" data-expandable="1" class="tree_item branch" id="expandable_branch_30_15982"><span tabindex="0">2 Março - 8 Março</span></p></li>
+<li class="type_structure depth_4 contains_branch" aria-expanded="true"><p class="tree_item branch"><span tabindex="0">9 Março - 15 Março</span></p><ul><li class="type_activity depth_5 item_with_icon"><p class="tree_item leaf hasicon"><a title="Página" href="https://moodle.isep.ipp.pt/mod/page/view.php?id=18477"><img alt="Página" class="smallicon navicon" title="Página" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/icon.png">Exercício Vencimentos</a></p></li>
+<li class="type_activity depth_5 item_with_icon"><p class="tree_item leaf hasicon"><a title="Ficheiro" href="https://moodle.isep.ipp.pt/mod/resource/view.php?id=18478"><img alt="Ficheiro" class="smallicon navicon" title="Ficheiro" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/html-24.png">Trabalhador.java</a></p></li>
+<li class="type_activity depth_5 item_with_icon"><p class="tree_item leaf hasicon"><a title="Ficheiro" href="https://moodle.isep.ipp.pt/mod/resource/view.php?id=18479"><img alt="Ficheiro" class="smallicon navicon" title="Ficheiro" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/html-24.png">TrabPeca.java</a></p></li>
+<li class="type_activity depth_5 item_with_icon"><p class="tree_item leaf hasicon"><a title="Ficheiro" href="https://moodle.isep.ipp.pt/mod/resource/view.php?id=18480"><img alt="Ficheiro" class="smallicon navicon" title="Ficheiro" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/html-24.png">TrabCom.java</a></p></li>
+<li class="type_activity depth_5 item_with_icon"><p class="tree_item leaf hasicon"><a title="Ficheiro" href="https://moodle.isep.ipp.pt/mod/resource/view.php?id=18481"><img alt="Ficheiro" class="smallicon navicon" title="Ficheiro" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/html-24.png">TrabHora.java</a></p></li>
+<li class="type_activity depth_5 item_with_icon current_branch"><p class="tree_item leaf hasicon active_tree_node"><a title="Página" href="https://moodle.isep.ipp.pt/mod/page/view.php?id=18483"><img alt="Página" class="smallicon navicon" title="Página" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/icon.png">Exercício Contadores Domésticos </a></p></li></ul></li></ul></li></ul></li>
+<li class="type_system depth_2 collapsed contains_branch" aria-expanded="false"><p data-loaded="0" data-expandable="1" class="tree_item branch" id="expandable_branch_0_mycourses"><a href="https://moodle.isep.ipp.pt/my/">As minhas disciplinas</a></p></li>
+<li class="type_system depth_2 collapsed contains_branch" aria-expanded="false"><p data-loaded="0" data-expandable="1" class="tree_item branch" id="expandable_branch_0_courses"><a href="https://moodle.isep.ipp.pt/course/index.php">Disciplinas</a></p></li></ul></li></ul></div></div><span id="sb-2" class="skip-block-to"></span><a href="#sb-3" class="skip-block">Ignorar Administração</a><div id="inst5" class="block_settings  block" role="navigation" data-block="settings" data-instanceid="5" aria-labelledby="instance-5-header"><div class="header"><div id="yui_3_17_2_2_1425917980611_147" class="title"><div class="block_action"><img src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/switch_minus.svg" class="block-hider-hide" tabindex="0" alt="Ocultar bloco Administração" title="Ocultar bloco Administração"><img src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/switch_plus.svg" class="block-hider-show" tabindex="0" alt="Mostrar bloco Administração" title="Mostrar bloco Administração"></div><h2 id="instance-5-header">Administração</h2></div></div><div class="content"><div id="settingsnav" class="box block_tree_box"><ul class="block_tree list"><li class="type_course collapsed contains_branch" aria-expanded="false"><p class="tree_item branch root_node"><span>Administração da disciplina</span></p><ul><li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://moodle.isep.ipp.pt/enrol/manual/unenrolself.php?enrolid=9926"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/user.png">Cancelar o acesso ao Moodle à UC PPROG(16459)</a></p></li>
+<li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://moodle.isep.ipp.pt/grade/report/index.php?id=992"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/grades.png">Pauta</a></p></li></ul></li>
+<li class="type_unknown collapsed contains_branch" aria-expanded="false"><hr><p class="tree_item branch root_node" id="usersettings"><span>Meu perfil</span></p><ul><li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://moodle.isep.ipp.pt/user/edit.php?id=6166&amp;course=992"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Editar perfil</a></p></li>
+<li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://portal.isep.ipp.pt/"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Modificar senha</a></p></li>
+<li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://moodle.isep.ipp.pt/message/edit.php?id=6166"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Notificações</a></p></li>
+<li class="type_unknown collapsed contains_branch" aria-expanded="false"><p class="tree_item branch"><span>Blogues</span></p><ul><li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://moodle.isep.ipp.pt/blog/preferences.php"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Preferências</a></p></li>
+<li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://moodle.isep.ipp.pt/blog/external_blogs.php"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Blogues externos</a></p></li>
+<li class="type_setting collapsed item_with_icon"><p class="tree_item leaf"><a href="https://moodle.isep.ipp.pt/blog/external_blog_edit.php"><img alt="" class="smallicon navicon" title="" src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/navigationitem.svg">Registar um blogue externo</a></p></li></ul></li></ul></li></ul></div></div></div><span id="sb-3" class="skip-block-to"></span>
+                   </div>
+               </div>
+               
+               
+            </div>
+        </div>
+    </div>
+
+    <!-- START OF FOOTER -->
+            <div id="page-footer" class="clearfix">
+
+        <div class="footer-left">
+
+            
+            <a href="http://moodle.org/" title="Moodle">
+                <img src="PPROG%2816459%29%20%20Exerc%C3%ADcio%20Contadores%20Dom%C3%A9sticos_ficheiros/moodle-logo.png" alt="Moodle logo">
+            </a>
+        </div>
+
+        <div class="footer-right">
+            <div class="logininfo">Utilizador: <a href="https://moodle.isep.ipp.pt/user/profile.php?id=6166" title="Ver perfil">Pedro Moreira 1140781</a> (<a href="https://moodle.isep.ipp.pt/login/logout.php?sesskey=SBbauzSuS1">Sair</a>)</div>        </div>
+
+            </div>
+        <div class="clearfix"></div>
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"\u00daltima altera\u00e7\u00e3o","name":"Designa\u00e7\u00e3o","error":"Erro","info":"Informa\u00e7\u00e3o","viewallcourses":"Ver todas as disciplinas","morehelp":"Mais ajuda","loadinghelp":"A carregar\u2026","cancel":"Cancelar","yes":"Sim","confirm":"Confirmar contas","no":"N\u00e3o","areyousure":"Tem a certeza?","closebuttontitle":"Fechar","unknownerror":"Erro desconhecido"},"repository":{"type":"Tipo","size":"Tamanho","invalidjson":"String JSON inv\u00e1lida","nofilesattached":"Sem ficheiros selecionados","filepicker":"Selecionar ficheiro","logout":"Sair","nofilesavailable":"N\u00e3o h\u00e1 ficheiros dispon\u00edveis","norepositoriesavailable":"Nenhum dos seus reposit\u00f3rios atuais pode devolver ficheiros no formato indicado.","fileexistsdialogheader":"Ficheiro existente","fileexistsdialog_editor":"Um ficheiro com esse nome j\u00e1 se encontra anexo ao texto que est\u00e1 a editar.","fileexistsdialog_filemanager":"Um ficheiro com esse nome j\u00e1 se encontra anexo","renameto":"Renomear para \"{$a}\"","referencesexist":"Existem {$a} atalhos de ficheiros que usam este ficheiro como fonte","select":"Selecionar"},"admin":{"confirmation":"Confirma\u00e7\u00e3o"}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+var navtreeexpansions4 = [{"id":"expandable_branch_30_15980","key":"15980","type":30},{"id":"expandable_branch_30_15981","key":"15981","type":30},{"id":"expandable_branch_30_15982","key":"15982","type":30},{"id":"expandable_branch_0_mycourses","key":"mycourses","type":0},{"id":"expandable_branch_0_courses","key":"courses","type":0}];
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+YUI().use('node', function(Y) {
+M.util.load_flowplayer();
+setTimeout("fix_column_widths()", 20);
+Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"MathJax.Hub.Config({\r\n    config: [\"MMLorHTML.js\", \"Safe.js\"],\r\n    jax: [\"input\/TeX\",\"input\/MathML\",\"output\/HTML-CSS\",\"output\/NativeMML\"],\r\n    extensions: [\"tex2jax.js\",\"mml2jax.js\",\"MathMenu.js\",\"MathZoom.js\"],\r\n    TeX: {\r\n        extensions: [\"AMSmath.js\",\"AMSsymbols.js\",\"noErrors.js\",\"noUndefined.js\"]\r\n    },\r\n    menuSettings: {\r\n        zoom: \"Double-Click\",\r\n        mpContext: true,\r\n        mpMouse: true\r\n    },\r\n    errorSettings: { message: [\"!\"] },\r\n    skipStartupTypeset: true,\r\n    messageStyle: \"none\"\r\n});\r\n","lang":"pt"});
+});
+function legacy_activity_onclick_handler_1(e) { e.halt(); window.open('https://moodle.isep.ipp.pt/mod/url/view.php?id=827&redirect=1', '', 'width=650,height=400,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+function legacy_activity_onclick_handler_2(e) { e.halt(); window.open('https://moodle.isep.ipp.pt/mod/resource/view.php?id=18472&redirect=1', '', 'width=620,height=450,toolbar=no,location=no,menubar=no,copyhistory=no,status=no,directories=no,scrollbars=yes,resizable=yes'); return false; };
+Y.use("moodle-block_navigation-navigation",function() {M.block_navigation.init_add_tree({"id":"4","instance":"4","candock":false,"courselimit":"20","expansionlimit":0});
+});
+Y.use("moodle-block_navigation-navigation",function() {M.block_navigation.init_add_tree({"id":"5","instance":"5","candock":false});
+});
+M.util.help_popups.setup(Y);
+Y.use("moodle-core-popuphelp",function() {M.core.init_popuphelp();
+});
+M.util.init_block_hider(Y, {"id":"inst158","title":"Impress&atilde;o de Documentos","preference":"block158hidden","tooltipVisible":"Ocultar bloco Impress&atilde;o de Documentos","tooltipHidden":"Mostrar bloco Impress&atilde;o de Documentos"});
+M.util.init_block_hider(Y, {"id":"inst4","title":"Navega\u00e7\u00e3o","preference":"block4hidden","tooltipVisible":"Ocultar bloco Navega\u00e7\u00e3o","tooltipHidden":"Mostrar bloco Navega\u00e7\u00e3o"});
+M.util.init_block_hider(Y, {"id":"inst5","title":"Administra\u00e7\u00e3o","preference":"block5hidden","tooltipVisible":"Ocultar bloco Administra\u00e7\u00e3o","tooltipHidden":"Mostrar bloco Administra\u00e7\u00e3o"});
+ M.util.js_pending('random54fdc81aa8e5d8'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random54fdc81aa8e5d8'); });
+Y.on('click', legacy_activity_onclick_handler_1, "#action_link54fdc81aa8e5d3", null);
+
+});
+//]]>
+</script>
+
+
+</body></html>

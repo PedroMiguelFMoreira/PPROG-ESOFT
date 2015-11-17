@@ -1,0 +1,14 @@
+Componentes Swing: http://docs.oracle.com/javase/tutorial/uiswing/components/index.html
+ - JFrame: 	http://docs.oracle.com/javase/tutorial/uiswing/components/frame.html
+ - JPanel: 	http://docs.oracle.com/javase/tutorial/uiswing/components/panel.html
+ - JButton: 	http://docs.oracle.com/javase/tutorial/uiswing/components/button.html
+ - JTextField: 	http://docs.oracle.com/javase/tutorial/uiswing/components/textfield.html
+ - JLabel: 	http://docs.oracle.com/javase/tutorial/uiswing/components/label.html
+ - JDialog:	http://docs.oracle.com/javase/tutorial/uiswing/components/dialog.html
+
+Gestores de posicionamento: http://docs.oracle.com/javase/tutorial/uiswing/layout/index.html
+ - BorderLayout:	http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html#border
+ - FlowLayout:		http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html#flow
+ - GridLayout:		http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html#grid
+
+Tratamento de eventos: http://docs.oracle.com/javase/tutorial/uiswing/events/actionlistener.html
